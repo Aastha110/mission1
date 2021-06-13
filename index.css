@@ -74,6 +74,86 @@ body{
    margin: 20px 0;
 }
 
+.explore__menu__container{
+    width: 100%;
+}
+
+.explore__menu__text{
+    color: #1d3557;
+   font-size: 30px;
+   margin: 20px 0;
+   text-align: center;
+}
+
+.food__menu__card{
+    width: 100%;
+    background-color: #ffff;
+    border-radius: 8px;
+}
+
+.food__image{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.explore__menu__card__description{
+    background-color: #ffff;
+    padding: 20px;
+
+}
+
+.explore__menu__view__more {
+    display: flex;
+    justify-content: center;
+}
+
+.restaurant__container{
+   width: 100%;
+}
+
+.restaurants__description{
+    color: #1d3557;
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.restaurant__flex__row__one{
+    display: flex;
+    width: 100%;
+    gap: 4px;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.restaurant__flex__row__two{
+    display: flex;
+    width: 100%;
+    gap: 4px;
+}
+
+.restaurant__1__image,
+.restaurant__2__image,
+.restaurant__3__image,
+.restaurant__4__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.restaurant__1,
+.restaurant__4 {
+  width: 100%;
+  height: 150px;
+}
+
+.restaurant__2,
+.restaurant__3 {
+  width: 100%;
+  height: 200px;
+}
+
+
 @media (min-width: 768px){
 
     .navbar{
@@ -98,6 +178,56 @@ body{
         align-items: center;
         gap: 10px;
     }
+
+    .explore__menu__list{
+        display: flex;
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    .explore__menu__container{
+        position: relative;
+    }
+
+    .explore__menu__gradient__bg{
+            background-image: linear-gradient(
+                to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100% 
+        );
+
+        left: 0;
+       top: 0;
+
+       height: 100%;
+       width: 100%;
+        z-index: -3;
+        position: absolute;
+        transform: skewY(-5deg);
+    }
+
+    .explore__menu__text{
+        font-size: 40px;
+    }
+
+    #pizza{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    .restaurant__container{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 30px;
+    }
+
+    .restaurant__flex{
+        width: 100%;
+        padding: 30px;
+    }
+
 }
 
 @media(min-width: 1020px){
@@ -109,6 +239,10 @@ body{
     
       .hero__text {
         font-size: 50px;
+      }
+
+      .restaurants__container{
+        margin-top: 30px;
       }
 
 }
