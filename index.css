@@ -153,6 +153,50 @@ body{
   height: 200px;
 }
 
+.information{
+    width: 100%;
+}
+
+.information__updates{
+    color: #1d3557;
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.information__updates__container{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.update__form__email{
+    height: 30px;
+    border: 1px solid palevioletred;
+    border-radius: 5px;
+    background-color: lightpink;
+    opacity: 0.5;
+}
+
+.quote__container {
+    position: relative;
+    margin-top: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-image: url(images.jpg);
+    opacity: 0.8;
+}
+
+.quote__container__text{
+    color: white;
+}
+
 
 @media (min-width: 768px){
 
@@ -244,12 +288,27 @@ body{
       .restaurants__container{
         margin-top: 30px;
       }
+      .restaurants__description{
+          font-size: 50px;
+          width: 100%;
+      }
+
+      .information__updates{
+          font-size: 50px;
+      }
+      .update__form__email{
+          width: 300px;
+          height: 35px;
+      }
 
 }
 
 @media (min-width: 1400px) {
     .container {
       max-width: 1300px;
+    }
+    .explore__menu__text{
+        font-size: 50px;
     }
 
 }
